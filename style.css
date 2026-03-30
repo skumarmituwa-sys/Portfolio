@@ -1,0 +1,177 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
+
+/* Navbar */
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:#020617;
+}
+
+.logo{
+color:#38bdf8;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#38bdf8;
+}
+
+/* Hero */
+.hero{
+text-align:center;
+padding:90px 20px;
+background:linear-gradient(135deg,#1e293b,#020617);
+}
+
+.hero h1{
+font-size:45px;
+}
+
+.hero h3{
+color:#38bdf8;
+margin:10px 0;
+}
+
+.btn{
+display:inline-block;
+padding:10px 25px;
+background:#38bdf8;
+color:black;
+border-radius:6px;
+margin-top:20px;
+text-decoration:none;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* Sections */
+.section{
+padding:70px 40px;
+max-width:1000px;
+margin:auto;
+}
+
+.section h2{
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+/* Skills */
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+gap:20px;
+}
+
+.skill{
+background:#1e293b;
+padding:15px;
+text-align:center;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.skill:hover{
+background:#38bdf8;
+color:black;
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(56,189,248,0.4);
+}
+
+/* Projects */
+.project-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.project-card{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+transition:0.4s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 30px rgba(0,0,0,0.5);
+}
+
+.tech{
+color:#94a3b8;
+font-size:14px;
+}
+
+/* Contact */
+.social-icons{
+margin-top:20px;
+}
+
+.social-icons a{
+text-decoration:none;
+color:inherit;
+}
+
+.icon{
+font-size:28px;
+margin-right:20px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.icon:hover{
+transform:scale(1.2);
+}
+
+.fa-linkedin:hover{
+color:#0077b5;
+}
+
+.fa-github:hover{
+color:#999;
+}
+
+/* Footer */
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+}
+
+/* Responsive */
+@media(max-width:768px){
+.navbar{
+flex-direction:column;
+}
+.hero h1{
+font-size:32px;
+}
+}
